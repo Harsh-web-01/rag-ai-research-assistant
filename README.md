@@ -99,21 +99,21 @@ A serverless Retrieval-Augmented Generation (RAG) AI Research Assistant powered 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Frontend (React/Next.js)                  │
-│              Served via Nginx in Docker Container            │
-│                    Port: 80 (HTTP)                           │
+│                    Frontend (React/Next.js)                 │
+│              Served via Nginx in Docker Container           │
+│                    Port: 80 (HTTP)                          │
 └────────────────────────────┬────────────────────────────────┘
                              │
                    HTTPS API Calls
                              │
 ┌────────────────────────────▼────────────────────────────────┐
-│              AWS API Gateway (HTTP API)                       │
+│              AWS API Gateway (HTTP API)                     |
 │    Endpoint: https://5ow79nd23b.execute-api.ap-south-1...   │
 └────────────────────────────┬────────────────────────────────┘
                              │
 ┌────────────────────────────▼────────────────────────────────┐
-│                  AWS Lambda Functions                         │
-│        (RAG Pipeline, LLM Integration, Vector Search)        │
+│                  AWS Lambda Functions                       |
+│        (RAG Pipeline, LLM Integration, Vector Search)       |
 └────────────────────────────┬────────────────────────────────┘
                              │
         ┌────────────────────┼────────────────────┐
