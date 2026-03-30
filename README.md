@@ -203,13 +203,6 @@ NEXT_PUBLIC_API_URL=your_api_gateway_url
 
 ---
 
-## 📌 Future Improvements
-
-* 🔄 Streaming responses
-* 📊 Better ranking (reranking models)
-* 🧠 Multi-document reasoning
-* 📈 Monitoring & logging
-* 🌍 Multi-language support
 
 ---
 
