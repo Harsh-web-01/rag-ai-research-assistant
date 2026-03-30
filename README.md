@@ -130,7 +130,8 @@ This project is orchestrated using AWS serverless services:
 ---
 
 ## 🏗️ Architecture Diagram
-![AI architecture flow on AWS 2](https://github.com/user-attachments/assets/4dbac5fe-2819-4ccf-ad84-2436b83f27d9)
+<img width="867" height="559" alt="Screenshot 2026-03-30 at 8 57 01 PM" src="https://github.com/user-attachments/assets/0364f0b3-0cde-4ee0-be3d-d5b3f423e805" />
+
 
 ## ☁️ AWS Services Used
 
