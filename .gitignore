@@ -1,75 +1,92 @@
 # =========================
-
-# Python Backend
-
+# 🔐 Terraform (CRITICAL)
 # =========================
-
-venv/
-.venv/
-**pycache**/
-*.pyc
-
-# =========================
-
-# Node / Frontend (Next.js)
-
-# =========================
-
-node_modules/
-.next/
-out/
-
-# =========================
-
-# Environment variables
-
-# =========================
-
-.env
-.env.local
-.env.*.local
-
-# =========================
-
-# Terraform
-
-# =========================
-
 .terraform/
 *.tfstate
 *.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 .terraform.lock.hcl
 
+# Sensitive Terraform variables
+*.tfvars
+*.tfvars.json
+
 # =========================
-
-# Build / Zip files
+# 🔐 Environment Variables
+# =========================
+.env
+.env.*
+*.env
+.env.local
 
 # =========================
+# 🐍 Python (Backend)
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
 
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# =========================
+# ⚛️ Next.js / Node (Frontend)
+# =========================
+node_modules/
+.next/
+out/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# 🐳 Docker
+# =========================
+.dockerignore
+
+# =========================
+# 📦 Lambda / Build Artifacts
+# =========================
 *.zip
 
 # =========================
-
-# Logs
-
+# 🧠 IDE / Editor
 # =========================
-
-*.log
-
-# =========================
-
-# OS files
-
-# =========================
-
-.DS_Store
-
-# =========================
-
-# IDE
-
-# =========================
-
 .vscode/
 .idea/
 
+# =========================
+# 💻 OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# 📄 Logs & Misc
+# =========================
+*.log
+*.swp
+*.bak
+
+# =========================
+# 🚫 Optional (if generated)
+# =========================
+coverage/
+.cache/
