@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # You can paste your API Gateway endpoint here before running docker-compose up!
+        - NEXT_PUBLIC_API_URL=https://5ow79nd23b.execute-api.ap-south-1.amazonaws.com
+    ports:
+      - "80:80"
+    restart: always
+    container_name: ai_assistant_frontend
