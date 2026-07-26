@@ -1,4 +1,4 @@
-# Stage 1: Build the Next.js application statically
+# Stage 1: Build the Next.js application 
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy all files (.dockerignore excludes .env.local so Terraform API URL from build-arg wins)
+# Copy all files 
 COPY . .
 
 # Pass build arguments (e.g. your AWS API Gateway URL from docker-compose)
